@@ -1,0 +1,569 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1046{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset0 Calibri;}{\f2\fnil\fcharset2 Symbol;}}
+{\*\generator Riched20 10.0.22000}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\qc\b\fs24\lang22 INSTITUTO FEDERAL DE MINAS GERAIS - IFMG\par
+CI\'caNCIA DA COMPUTA\'c7\'c3O\par
+\par
+\b0 EMANUEL MELO\par
+\par
+\b ALGORITMOS II - RELAT\'d3RIO SISTEMA DE HOTEL\par
+\par
+\par
+FORMIGA\par
+2019\b0\f1\fs22\par
+
+\pard\sa200\sl276\slmult1\b\i\f0\fs24\par
+Keywords\par
+\b0\i0 Sistema para hotel, algoritmo.\b\i\par
+Abstract\i0\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\b0 O trabalho desenvolvido pelo grupo da turma do segundo per\'edodo de Ci\'eancia da Computa\'e7\'e3o tem o intuito de  fazer um sistema completo para um hotel, envolvendo todos os m\'f3dulos necess\'e1rios para o funcionamento do mesmo.\par
+\par
+\b 1 INTRODU\'c7\'c3O\par
+\par
+\b0 Desenvolvido no programa NetBeans IDE 8.2 na linguagem C, \'e9 um sistema complexo que capacita: m\'f3dulos de cadastro e gest\'e3o de dados, m\'f3dulo de reservas, m\'f3dulo de transa\'e7\'f5es, m\'f3dulo de feedback e m\'f3dulos de importa\'e7\'e3o/exporta\'e7\'e3o de dados, sendo todos sincronizados e separados em uma interface simples e de f\'e1cil entendimento para o usu\'e1rio.\par
+\par
+\b 2 FUNCIONALIDADE\par
+\par
+\b0 O sistema possui uma interface com todos os menus necess\'e1rios para a utiliza\'e7\'e3o do usu\'e1rio. Inicialmente o usu\'e1rio tem o menu padr\'e3o do sistema, sendo assim ele deve cadastrar uma conta operadora para que tenha separa\'e7\'e3o de permiss\'f5es de conta para conta. Assim, atrav\'e9s desse login a interface inicial do programa aparecer\'e1 e estar\'e1 pronta para uso.\par
+\par
+\b 2.1 M\'f3dulo de gest\'e3o\par
+\par
+\b0 Nesse m\'f3dulo se encontra toda a parte de cadastro do programa. Nele que \'e9 feito o cadastro tanto dos hot\'e9is, h\'f3spedes, fornecedores, produtos, acomoda\'e7\'f5es e suas categorias e o cadastro dos operadores (admin).\par
+\par
+\b 2.2 M\'f3dulo de reservas\par
+\par
+\b0 Encontra-se a parte das reservas das acomoda\'e7\'f5es, que podem ser feitas conforme a necessidade do usu\'e1rio. As acomoda\'e7\'f5es podem ser selecionadas por categorias(luxo, simples, etc), por data dispon\'edvel, pelo n\'famero de pessoas que essa acomoda\'e7\'e3o suporta e pelas facilidades que a acomoda\'e7\'e3o apresenta.\par
+\par
+\b 2.3 M\'f3dulo de transa\'e7\'f5es\par
+\par
+\b0\'c9 a parte do sistema que se encontra a parte de transa\'e7\'f5es, check-in e check-out. Apresenta tamb\'e9m a parte de venda dos produtos, controle de caixa, contas a receber, contas a pagar e controle de entrada de produtos industrializados. No geral, \'e9 a parte de gest\'e3o financeira do sistema.\par
+\par
+\b 2.4 M\'f3dulo de feedback\par
+\par
+\b0\'c1rea do sistema em que mostra todas as caracter\'edsticas tanto dos quartos, mostrando a categoria do quarto, suas facilidades, quantas pessoas suporta e a sua descri\'e7\'e3o, quanto dos hospedes, mostrando e-mail, CPF, endere\'e7o. Tamb\'e9m aparecem as reservas j\'e1 feitas, mostrando data de chegada, sa\'edda, a categoria da acomoda\'e7\'e3o que foi reservada, c\'f3digo da acomoda\'e7\'e3o e do h\'f3spede e o c\'f3digo da reserva.\par
+\par
+\b 2.5 M\'f3dulo de importa\'e7\'e3o/exporta\'e7\'e3o\par
+\par
+\b0\'c9 o m\'f3dulo que tem a fun\'e7\'e3o de receber arquivos no formato xml para aderir ao programa ou ent\'e3o exportar para a mem\'f3ria do computador e tamb\'e9m d\'e1 ao usu\'e1rio a op\'e7\'e3o de imprimir ou n\'e3o.\par
+\par
+\b 3 FUN\'c7\'d5ES\par
+\b0\par
+As fun\'e7\'f5es em algoritmos s\'e3o rotinas que s\'e3o capazes de executar instru\'e7\'f5es e retornar um resultado, valor de retorno. Voc\'ea pode ter dois tipos de passagem de par\'e2metros para fun\'e7\'f5es: passagem de par\'e2metro por valor e passagem de par\'e2metro por refer\'eancia, onde apenas o endere\'e7o da vari\'e1vel \'e9 enviado para a rotina.\par
+\par
+\b 3.1 Fun\'e7\'f5es da parte de acomoda\'e7\'f5es\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl360\slmult1\qj\b0 Verifica se a acomoda\'e7\'e3o j\'e1 existe:\par
+
+\pard\ri-448\sa200\sl360\slmult1\qj\tab int Verificar_acomodacao;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Busca a posi\'e7\'e3o na struct em que a acomodacao se encontra:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab int Posicao_acomodacao;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Realiza a atualizacao da acomodacao:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab void atualiza_acomodacao;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Realiza o cadastro da acomoda\'e7\'e3o:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab void Cadastro_acomodacao;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Mostra na tela todas as acomoda\'e7\'f5es:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab void ver_acomodacao;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Pesquisa acomoda\'e7\'e3o por facilidade:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab void pesquisar_facilidades;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Verifica se a posi\'e7\'e3o da categoria \'e9 v\'e1lida\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab int Verificar_acomodacao_Categoria;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Retorna na struct "posicao" as posi\'e7\'f5es que o hotel tem para receber segundo o filtro:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab int Verificar_acomodacao_Categoria_Quantidade;\par
+\tab void PosicaoAcomodacao_Teste;\par
+\par
+\b 3.2 Fun\'e7\'f5es de agenda/agendamento\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj\b0 Retorna a diferen\'e7a dos anos:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab int diferenca_ano(criar_Agenda *cadastro_agenda_dados);\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Realiza o cadastramento de uma agenda:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab void Cadastro_agenda;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Verifica se a data digitada \'e9 v\'e1lida\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab int valida_data;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Verifica se a data de sair \'e9 v\'e1lida\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab int valida_data_sair(criar_Agenda *cadastro_agenda_dados);\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Verifica a disponibilidade das datas:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab int verificar_Datas;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Retorna em dias a diferen\'e7aa entre as datas:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab const char *wd(int year, int month, int day); \par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Mostra todas as reservas\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab void imprimirReserva;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Mostra todas as acomodacoes\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab void mostrar_acomodacao_tipo;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Verifica a reserva pelo c\'f3digo:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab int Verificar_Reserva;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Verifica se o tipo da acomoda\'e7\'e3o est\'e1 correto:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab int Verificar_acomodacao_tipo;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Verifica se o c\'e9digo da reserva j\'e1 n\'e3o esta pr\'e9-cadastrado:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab int Verificar_Codigo_Reserva;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Busca a posi\'e7\'e3o da reserva:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab int PosicaoReserva;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Verifica\'e7\'e3o de dias:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab int PosicaoEncerrarReserva;\par
+\par
+\b 3.3 Fun\'e7\'f5es da parte das categorias das acomoda\'e7\'f5es\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj\b0 Verifica a categoria se j\'e1 est\'e1 cadastrada:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab int Verificar_Categoria;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Busca a posi\'e7\'e3o da categoria:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab int Posicao_Categoria;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Realiza a atualiza\'e7\'e3o da categoria:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab void atualiza_Categoria;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Realiza o cadastro da categoria:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab void Cadastro_Categoria;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Mostra todas as categorias\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab void ver_Categoria;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Verifica se o nome da categoria prester a ser cadastrada est\'e1 dispon\'edvel:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab int Verificar_Categoria_Nome;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Mostra os tipos da categoria:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab void ver_Categoria_tipo;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Verifica se o tipo da categoria esta dispon\'edvel:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab int Verificar_Categoria_tipo;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Busca a posi\'e7\'e3o do tipo da categoria:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab int Posicao_Categoria_Tipo;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Pesquisa a quantidade de pessoas que cabem naquela categoria:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab void pesquisar_quantidade_pessoas;\par
+\par
+\b 3.4 Fun\'e7\'f5es da parte dos fornecedores\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj\b0 Verifica a posi\'e7\'e3o do fornecedor:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab int VerificarFornecedor;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Realiza a busca da posi\'e7\'e3o:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab int PosicaoFornecedor;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Realiza a atualiza\'e7\'e3o, ou edi\'e7\'e3o dos fornecedores:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab void atualizaFornecedor;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Realiza o cadastro do fornecedor:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab void CadastroFornecedor;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Mostra todos os fornecedores:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab void verFornecedor;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Verifica a disponibilidade dos produtos do fornecedor:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab int Verificar_Fornecedor_Codigo;\par
+\b\par
+3.5 Fun\'e7\'f5es da parte dos h\'f3spedes\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj\b0 Verifica disponibilidade do c\'f3digo do h\'f3spede:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab int VerificarHospede;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Busca a posicao do h\'f3spede:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab int PosicaoHospede;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Realiza a atualiza\'e7\'e3o do h\'f3spede:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab void atualizaHospede;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Cadastra o h\'f3spede:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab void CadastroHospede;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Mostra o Hospede:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab void verHospede;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Realiza a busca do h\'f3spede pelo nome:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab int PosicaoHospede_Nome;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Realiza a busca do h\'f3spede por sexo:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab int PosicaoHospede_Sexo;\par
+\par
+\b 3.6 Fun\'e7\'f5es da parte de hotel\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj\b0 Fun\'e7\'e3o de verificar o hotel:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab int VerificarHotel;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Struct de buscar a posi\'e7\'e3o do hotel:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab int PosicaoHotel;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Atualiza as informa\'e7\'f5es sobre o hotel:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab void atualizaHotel();\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Cadastra o hotel:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab void CadastroHotel;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Verifica o hotel e suas informa\'e7\'f5es:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab void verHotel;\par
+\par
+\b 3.7 Fun\'e7oes da parte de login\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj\b0 As fun\'e7\'f5es seguintes realizam os processos de verifica\'e7\'e3o de login e a verifica\'e7\'e3o de todos os acessos ao sistema:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab int verificar_Login_final;\par
+\tab int verificar_posicao_login;\par
+\tab int verificar_Usuariol;\par
+\tab int verificar_senhal;\par
+\tab int verificar_acessos;\par
+\tab int verificar_acessos1;\par
+\tab int verificar_acessos2;\par
+\tab int verificar_acessos3;\par
+\tab int verificar_acessos4;\par
+\tab int verificar_acessos5;\par
+\b\par
+3.8 Fun\'e7\'f5es da parte das contas operadoras\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj\b0 Verifica se o operador est\'e1 dispon\'edvel:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab int Verificar_Operador;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Busca a posi\'e7\'e3o do operador:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab int Posicao_Operador;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Realiza a atualiza\'e7\'e3o das informa\'e7\'f5es do operador:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab void atualiza_Operador;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Realiza o cadastro do operador:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab void Cadastro_Operador;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Mostra o operador:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab void ver_Operador;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Verifica o login e senha do operador:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab int VerificarOperador_Login;\par
+\par
+\b 3.9 Fun\'e7\'f5es da \'e1rea de produtos\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj\b0 Verifica as informa\'e7\'f5es os produtos:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab int VerificarProduto;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Busca a posi\'e7\'e3o do produto:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab int PosicaoProduto;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Atualiza as informa\'e7\'f5es dos produtos:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab void atualizaProduto;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Realiza o cadastro dos produtos na struct principal:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab void CadastroProduto;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Mostra os produtos cadastrados\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab void PosicaoProduto_Quantidade;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Mostra todos os produtos pr\'e9-cadastrados:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab void verProduto;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Mostra o nome de todos os produtos cadastrados:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab void verProduto_nome;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Verifica se o produto cadastrado com certo nome est\'e1 dispon\'edvel:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab int Verificar_Disponibilidade_Produto;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Fun\'e7\'e3o para atualizar a venda do produto depois de comprar novos:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab void atualizaProduto_Venda;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Verifica o novo pre\'e7o de compra do produto depois de atualiz\'e1-lo:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab void atualizaProduto_Compra;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Retorna na struct "posicao" as posi\'e7\'f5s que o hotel tem para receber segundo o filtro:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab int VerificarProduto_Quantidade;\par
+\par
+\b 3.10 Fun\'e7\'f5es da \'e1rea de transa\'e7\'f5es\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj\b0 Essa fun\'e7\'e3o busca a posi\'e7\'e3o em que est\'e1 o dado digitado da struct "receber":\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab int PosicaoReceber;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Essa fun\'e7\'e3o realiza o cadastramento de contas:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab void Cadastro_Conta;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Essa struct Realiza a Busca de um Hospede pela posi\'e7\'e3o\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab int PosicaoHospede_Reserva_posicao;\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Essa struct busca a posi\'e7\'e3o de um h\'f3spede recebendo o c\'f3digo de uma reserva pr\'e9-digitada:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab int PosicaoHospede_Reserva_Reserva;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Essa fun\'e7\'e3o verifica o valor da reserva que o h\'f3spede pagou ou colocou na conta:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab int Diaria_Hospede_Valor;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Essa fun\'e7\'e3o realiza o cadastro de uma transa\'e7\'e3o:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab void Cadastro_Transacao_Hospede;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Realiza o cadastramento do caixa do hotel com todos os seus dados \par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab void Cadastro_Caixa;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Verifica se o c\'f3digo da reserva digitado \'e9 um c\'f3digo v\'e1lido j\'e1 pr\'e9-cadastrado:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab int Verificar_Codigo_Transacao_Reserva;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Busca a posicao do Hospede atrav\'e9s do Numero de sua Reserva:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab int PosicaoHospede_Reserva;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Realiza a atualiza\'e7\'e3o da transa\'e7\'e3o cujo c\'f3digo foi informado pelo operador:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab void atualizaTransacao;\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Realiza a verifica\'e7\'e3o se o c\'f3digo do h\'f3spede digitado j\'e1 possui uma reserva:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab int VerificarHospede_Reserva;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Verifica e a conta j\'e1 foi criada:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab int VerificarConta;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Imprime na tela todas as contas:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab void verContas;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Localiza a posi\'e7\'e3o da conta pr\'e9-digitada pelo operador:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab int PosicaoConta;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Realiza o cadastramento do controle de caixa:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab void Cadastro_Controle;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Realiza o cadastramento do que o hotel tem para receber:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab void Cadastro_Receber;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Mostra todos os dados processador pelo controle do hotel:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab void verControle;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Mostra tudo o que o hotel ir\'e1 receber:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab void verReceber;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Verifica se a posi\'e7\'e3o do controle pr\'e9-digitada pelo operadores \'e9 v\'e1lida:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab int VerificarControle;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Retorna a quantidade de a\'e7\'f5es feita do contador do controle:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab void PosicaoControle_Quantidade;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Verifica se o c\'f3digo j\'e1 informado \'e9 v\'e1lido e retorna:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab int VerificarReceber;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Retorna na struct "posicao" as posi\'e7\'f5es que o hotel tem para receber segundo o filtro:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab void PosicaoReceber_Quantidade;\tab\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Verifica a quantidade de contas cadastradas com aquele filtro:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab int VerificarContaz;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Mostra todo o caixa do hotel:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab void Exibir_Caixa;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Retorna na struct "posicao" as posi\'e7\'f5es que o hotel tem para receber segundo o filtro:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab void PosicaoConta_QuantidadeVerificarConta;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Retorna na struct "posicao" as posi\'e7\'f5es que o hotel tem para receber segundo o filtro:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab void PosicaoCaixa_QuantidadeVerificarConta;\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-448\sa200\sl276\slmult1\qj Verifica se o caixa existe:\par
+
+\pard\ri-448\sa200\sl276\slmult1\qj\tab int VerificarCaixas;\par
+\par
+\b 4 CONCLUS\'c3O\par
+\par
+\b0 O trabalho realizado pelo grupo, da turma de Algoritmos II do curso de Ci\'eancia da Computa\'e7\'e3o foi um grande aprendizado, o que deixou todos os integrantes do grupo a par do conte\'fado e realizados com o trabalho bem feito. Tivemos a oportunidade de ver e rever os nossos erros durante a programa\'e7\'e3o deste, ampliando ainda mais nossos conhecimentos na \'e1rea. Agradecimentos especiais ao professor Manoel Pereira Junior.\par
+\par
+\b 5 DELA\'c7\'c3O PREMIADA\par
+\par
+\b0 O grupo n\'e3o conseguiu realizar a parte em que salva em duas extens\'f5es, est\'e1 salvando em apenas uma, que \'e9 o bin\'e1rio. Ficou faltando a parte de salvar no txt.\par
+\par
+\par
+\par
+\par
+\par
+\f1\fs22\par
+\par
+\par
+\par
+\par
+\par
+}
+ 

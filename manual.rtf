@@ -1,0 +1,673 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1046{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil\fcharset0 Arial;}}
+{\*\generator Riched20 10.0.17763}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\qc\f0\fs52\lang22 Manual\par
+Sum\'e1rio\par
+
+\pard\sa200\sl276\slmult1\b\f1\fs24 1.Introdu\'e7\'e3o\par
+2.0 Modulo de Cadastro e gest\'e3o de dados.\par
+
+\pard\li720\sa200\sl276\slmult1 2.0.0 Cadastro Hotel\par
+
+\pard\li1440\sa200\sl276\slmult1 2.0.0.0 Cadastrar Hotel \par
+2.0.0.1 Ver Hotel\par
+2.0.0.2 Editar Hotel\par
+2.0.0.3 Excluir Hotel\par
+
+\pard\li720\sa200\sl276\slmult1 2.0.1 Cadastro Hospede\par
+
+\pard\li1440\sa200\sl276\slmult1 2.0.1.0 Cadastrar Hospede\par
+2.0.1.1 Ver Hospede\par
+2.0.1.2 Editar Hospede\par
+2.0.1.3 Excluir Hospede\par
+
+\pard\li720\sa200\sl276\slmult1 2.0.2 Fornecedor\par
+
+\pard\li1440\sa200\sl276\slmult1 2.0.2.0 Cadastrar Fornecedor\par
+2.0.2.1 Ver Fornecedor\par
+2.0.2.2 Editar Fornecedor\par
+2.0.2.3 Excluir Fornecedor\par
+
+\pard\li720\sa200\sl276\slmult1 2.0.3 Produtos\par
+
+\pard\li1440\sa200\sl276\slmult1 2.0.3.0 Cadastrar Produto\par
+2.0.3.1 Ver Produto\par
+2.0.3.2 Editar Produto\par
+2.0.3.3 Excluir Produto\par
+
+\pard\li720\sa200\sl276\slmult1 2.0.4 Categorias de Acomoda\'e7\'e3o\par
+
+\pard\li1440\sa200\sl276\slmult1 2.0.4.0 Cadastrar Categoria\par
+2.0.4.1 Ver Categoria\par
+2.0.4.2 Editar Categoria\par
+2.0.4.3 Excluir Categoria\par
+
+\pard\li720\sa200\sl276\slmult1 2.0.5 Acomoda\'e7\'e3o \par
+
+\pard\li1440\sa200\sl276\slmult1 2.0.5.0 Cadastrar Acomoda\'e7\'e3o\par
+2.0.5.1 Ver Acomoda\'e7\'e3o\par
+2.0.5.2 Editar Acomoda\'e7\'e3o\par
+2.0.5.3 Excluir Acomoda\'e7\'e3o\par
+
+\pard\li720\sa200\sl276\slmult1 2.0.6 Operador\par
+
+\pard\li1440\sa200\sl276\slmult1 2.0.6.0 Cadastrar Operador\par
+2.0.6.1 Ver Operador\par
+2.0.6.2 Editar Operador\par
+2.0.6.3 Excluir Operador\par
+
+\pard\sa200\sl276\slmult1 2.1 Modulo de reserva\par
+
+\pard\li720\sa200\sl276\slmult1 2.1.0 Realizar reserva\par
+2.1.1 Listar reserva\par
+2.1.2 Excluir reserva\par
+
+\pard\sa200\sl276\slmult1 2.2 Modulo de transa\'e7\'f5es\par
+
+\pard\li720\sa200\sl276\slmult1 2.2.0 Chek-in\par
+2.2.1 Chek-out\par
+2.2.2 Venda de Produto\par
+2.2.3 Controle de caixa\par
+2.2.4 Contas a Receber\par
+2.2.5 Entrada de produtos industrializados\par
+2.2.6 Contas a pagar\par
+
+\pard\sa200\sl276\slmult1 2.3 Modulo de Feedback\par
+
+\pard\li720\sa200\sl276\slmult1 2.3.0 Listagem Hospede\par
+2.3.1 Listagem Acomoda\'e7\'e3o\par
+2.3.2 Listagem Reservas\par
+2.3.3 Movimenta\'e7\'e3o de acomoda\'e7\'f5es\par
+
+\pard\li1440\sa200\sl276\slmult1 2.3.3.0 Dados da Acomoda\'e7\'e3o\par
+2.3.3.1 Diarias Ocupadas\par
+2.3.3.2 Quanto rendeu em Hospedagem\par
+
+\pard\li720\sa200\sl276\slmult1 2.3.4 Listagem de produtos de consumo\par
+2.3.5 Vendas\par
+2.3.6 Contas a Receber\par
+2.3.7 Contas a Pagar\par
+2.3.8 Movimenta\'e7\'e3o de caixa\par
+
+\pard\sa200\sl276\slmult1 2.4 Modulo de Importa\'e7\'e3o e Exporta\'e7\'e3o\par
+
+\pard\li720\sa200\sl276\slmult1 2.4.0 Importar\par
+2.4.1 Exportar\par
+
+\pard\li1440\sa200\sl276\slmult1\par
+
+\pard\li720\sa200\sl276\slmult1\par
+
+\pard\sa200\sl276\slmult1 1.  Introdu\'e7\'e3o\par
+\b0 Este manual cont\'e9m uma s\'e9rie de informa\'e7\'f5es que auxiliar\'e1 voc\'ea a entender alguns conceitos b\'e1sicos do nosso sistema do Hotel.\par
+Seu objetivo Principal \'e9 mostrar o funcionamento global do Programa. Desde a entrada de dados at\'e9 a saida de dados. N\'e3o caber\'e1 neste manual, nenhuma an\'e1lise ou discuss\'e3o a respeito do modelo estrutural adotado bem como dos resultados obtidos.\par
+Exemplos bem simples ser\'e3o resolvidos passo-a-passo, isto \'e9, mostrando cada etapa de maneira sequ\'eancial e detalhada. Sugerimos que voc\'ea fa\'e7a-os, pois eles fornecem um conjunto de no\'e7\'f5es b\'e1sicas de como utilizar o programa de forma correta e produtiva.\par
+
+\pard\sa200\sl276\slmult1\tx142\tx426\b 2.0 Modulo de Cadastro e gest\'e3o de dados.\par
+
+\pard\li720\sa200\sl276\slmult1\b0 Neste modulo o usu\'e1rio poder\'e1 cadastrar um hotel, seus hospedes, fornecedores, produtos, categorias de acomoda\'e7\'f5es e operadores.\par
+Caso seja seu primeiro loguin v\'e1 primeiro para o t\'f3pico \b 2.0.6 Operador.\b0\par
+
+\pard\fi10\li710\sa200\sl276\slmult1\tx710\b 2.0.0 Cadastro Hotel\par
+
+\pard\li1440\sa200\sl276\slmult1 2.0.0.0 Cadastro Hotel \par
+\b0\tab Neste t\'f3pico iremos mostrar como cadastraremos um Hotel com os seguintes passos:\par
+1\'b0 - Abre o programa .\par
+2\'b0 - Fa\'e7a o loguin digitando o nome de usuario e a senha.\par
+(ex) usuario: Biscoitinho senha:123.\par
+
+\pard\sa200\sl276\slmult1\tab\tab 3\'b0 - Escolha a op\'e7\'e3o Modulo de Cadastro e gest\'e3o de dados \tab\tab apertando o numero ''1''.\par
+\tab\tab 4\'b0 - Escolha a op\'e7\'e3o Hotel apertando o numero ''1''.\par
+\tab\tab 5\'b0 - Escolha a op\'e7\'e3o Cadastrar Hotel apertando o numero ''1''.\par
+\tab\tab 6\'b0 - Preencher os seguintes campos, Nome Fantasia, Raz\'e3o \tab\tab Social, Inscri\'e7ao estadual, Endere\'e7o, Email, Nome do dono, \tab\tab CNPJ, Telefone do dono, Telefone do Hotel, Check-in e check-\tab\tab ou no seguinte formato (00.00) horas e min e Lucros produtos \tab\tab vendidos.\par
+\tab\tab\b 2.0.0.1 Ver Hotel\par
+\tab\tab\tab\b0 Neste t\'f3pico iremos mostrar como ver os Hoteis \tab\tab\tab\tab cadastrados.\par
+
+\pard\li2160\sa200\sl276\slmult1 1\'b0 - Abre o programa .\par
+2\'b0 - Fa\'e7a o loguin digitando o nome de usuario e a senha.\par
+(ex) usuario: Biscoitinho senha:123.\par
+
+\pard\li720\sa200\sl276\slmult1\tab\tab 3\'b0 - Escolha a op\'e7\'e3o Modulo de Cadastro e gest\'e3o de \tab\tab dados  apertando o numero ''1''.\par
+\tab\tab 4\'b0 - Escolha a op\'e7\'e3o Hotel apertando o numero ''1''.\par
+\tab\tab 5\'b0 - Escolha a op\'e7\'e3o Ver Hotel apertando o numero ''2''.\par
+\tab\tab 6\'b0 - Escolha a op\'e7\'e3o desejada.\par
+\tab\b 2.0.0.2 Editar Hotel \par
+
+\pard\li2160\sa200\sl276\slmult1\b0 Neste t\'f3pico iremos mostrar como editar/alterar alguma informa\'e7\'e3o errada no cadastramento ou por outros motivos. \par
+1\'b0 - Abre o programa .\par
+2\'b0 - Fa\'e7a o loguin digitando o nome de usuario e a senha.\par
+(ex) usuario: Biscoitinho senha:123.\par
+
+\pard\li720\sa200\sl276\slmult1\tab\tab 3\'b0 - Escolha a op\'e7\'e3o Modulo de Cadastro e gest\'e3o de \tab\tab dados  apertando o numero ''1''.\par
+\tab\tab 4\'b0 - Escolha a op\'e7\'e3o Hotel apertando o numero ''1''.\par
+\tab\tab 5\'b0 - Escolha a op\'e7\'e3o Editar hotel apertando o numero \tab\tab ''3''.\par
+\tab\tab 6\'b0 - Digite o nome fantasia do hotel.\par
+\tab\tab 7\'ba - Digitar os novos dados.\par
+\tab\b 2.0.0.3 Excluir Hotel\par
+\tab\tab\b0 Neste t\'f3pico iremos mostrar como Excluir um cadastro \tab\tab de um hotel desejado.\par
+
+\pard\li2160\sa200\sl276\slmult1 1\'b0 - Abre o programa .\par
+2\'b0 - Fa\'e7a o loguin digitando o nome de usuario e a senha.\par
+(ex) usuario: Biscoitinho senha:123.\par
+
+\pard\li720\sa200\sl276\slmult1\tab\tab 3\'b0 - Escolha a op\'e7\'e3o Modulo de Cadastro e gest\'e3o de \tab\tab dados  apertando o numero ''1''.\par
+\tab\tab 4\'b0 - Escolha a op\'e7\'e3o Hotel apertando o numero ''1''.\par
+\tab\tab 5\'b0 - Escolha a op\'e7\'e3o Excluir Hotel apertando o numero \tab\tab ''4''.\par
+\tab\tab 6\'b0 - Digite o nome do Hotel.\par
+\b 2.0.1 Cadastrar Hospede\par
+\tab\b0 Neste t\'f3pico iremos mostrar como cadastrar, ver, editar, excluir \tab hospedes.\par
+
+\pard\li1440\sa200\sl276\slmult1\b 2.0.1.0 Cadastrar Hospede\par
+
+\pard\li2160\sa200\sl276\slmult1\b0 Neste t\'f3pico iremos mostrar como cadastraremos um Hospede com os seguintes passos:\par
+1\'b0 - Abre o programa .\par
+2\'b0 - Fa\'e7a o loguin digitando o nome de usuario e a senha.\par
+(ex) usuario: Biscoitinho senha:123.\par
+
+\pard\li720\sa200\sl276\slmult1\tab\tab 3\'b0 - Escolha a op\'e7\'e3o Modulo de Cadastro e gest\'e3o de \tab\tab dados apertando o numero ''1''.\par
+\tab\tab 4\'b0 - Escolha a op\'e7\'e3o Hospede apertando o numero ''2''.\par
+\tab\tab 5\'b0 - Escolha a op\'e7\'e3o Cadastrar Hospede apertando o \tab\tab numero ''1''.\par
+\tab\tab 6\'b0 - Preencher os seguintes campos, codigo do hospede \tab\tab (\'fanico), Nome do Hospede, Sexo, Estado Civil, \tab\tab  \tab endere\'e7o, Email, CPF, Telefone,\par
+
+\pard\sa200\sl276\slmult1\tab\tab\b 2.0.0.1 Ver Hospede\par
+\tab\tab\tab\b0 Neste t\'f3pico iremos mostrar como ver os Hospede, \tab\tab\tab\tab cadastrados.\par
+
+\pard\li2160\sa200\sl276\slmult1 1\'b0 - Abre o programa .\par
+2\'b0 - Fa\'e7a o loguin digitando o nome de usuario e a senha.\par
+(ex) usuario: Biscoitinho senha:123.\par
+
+\pard\li720\sa200\sl276\slmult1\tab\tab 3\'b0 - Escolha a op\'e7\'e3o Modulo de Cadastro e gest\'e3o de \tab\tab dados  apertando o numero ''1''.\par
+\tab\tab 4\'b0 - Escolha a op\'e7\'e3o Hotel apertando o numero ''1''.\par
+\tab\tab 5\'b0 - Escolha a op\'e7\'e3o Ver Hotel apertando o numero ''2''.\par
+\tab\tab 6\'b0 - Escolha a op\'e7\'e3o desejada.\par
+\tab\b 2.0.0.2 Editar Hotel \par
+
+\pard\li2160\sa200\sl276\slmult1\b0 Neste t\'f3pico iremos mostrar como editar/alterar alguma informa\'e7\'e3o errada no cadastramento ou por outros motivos. \par
+1\'b0 - Abre o programa .\par
+2\'b0 - Fa\'e7a o loguin digitando o nome de usuario e a senha.\par
+(ex) usuario: Biscoitinho senha:123.\par
+
+\pard\li720\sa200\sl276\slmult1\tab\tab 3\'b0 - Escolha a op\'e7\'e3o Modulo de Cadastro e gest\'e3o de \tab\tab dados  apertando o numero ''1''.\par
+\tab\tab 4\'b0 - Escolha a op\'e7\'e3o Hotel apertando o numero ''1''.\par
+\tab\tab 5\'b0 - Escolha a op\'e7\'e3o Editar hotel apertando o numero \tab\tab ''3''.\par
+\tab\tab 6\'b0 - Digite o nome fantasia do hotel.\par
+\tab\tab 7\'ba - Digitar os novos dados.\par
+
+\pard\li720\sa200\sl276\slmult1\tx1420\tab\b 2.0.0.3 Excluir Hotel\par
+
+\pard\li720\sa200\sl276\slmult1\tab\tab\b0 Neste t\'f3pico iremos mostrar como Excluir um cadastro \tab\tab de um hotel desejado.\par
+
+\pard\li2160\sa200\sl276\slmult1 1\'b0 - Abre o programa .\par
+2\'b0 - Fa\'e7a o loguin digitando o nome de usuario e a senha.\par
+(ex) usuario: Biscoitinho senha:123.\par
+
+\pard\li720\sa200\sl276\slmult1\tab\tab 3\'b0 - Escolha a op\'e7\'e3o Modulo de Cadastro e gest\'e3o de \tab\tab dados  apertando o numero ''1''.\par
+\tab\tab 4\'b0 - Escolha a op\'e7\'e3o Hotel apertando o numero ''1''.\par
+\tab\tab 5\'b0 - Escolha a op\'e7\'e3o Excluir Hotel apertando o numero \tab\tab ''4''.\par
+\tab\tab 6\'b0 - Digite o nome do Hotel.\par
+\b 2.0.2 Fornecedor\par
+
+\pard\li2160\sa200\sl276\slmult1\b0 Neste t\'f3pico iremos mostrar como cadastrar,alterar,ver e excluir um fornecedor.\par
+
+\pard\li1420\sa200\sl276\slmult1\b 2.0.2.0 Cadastrar Fornecedor\par
+
+\pard\li2160\sa200\sl276\slmult1\b0 Neste t\'f3pico iremos mostrar como cadastrar um fornecedor.\par
+1\'b0 - Abre o programa .\par
+2\'b0 - Fa\'e7a o loguin digitando o nome de usuario e a senha.\par
+(ex) usuario: Biscoitinho senha:123.\par
+
+\pard\li720\sa200\sl276\slmult1\tab\tab 3\'b0 - Escolha a op\'e7\'e3o Modulo de Cadastro e gest\'e3o de \tab\tab dados  apertando o numero ''1''.\par
+\tab\tab 4\'b0 - Escolha a op\'e7\'e3o Fornecedor apertando o numero \tab\tab ''3''.\par
+\tab\tab 5\'b0 - Escolha o op\'e7\'e3o Cadastrar Fornecedor, apertando o \tab\tab numero ''1''.\par
+\tab\tab 6\'b0 - preecha os campos, Nome Fantasia, Codigo do \tab\tab\tab fornecedor, Raz\'e3o Social, Inscri\'e7\'e3o Estadual, \tab\tab\tab\tab Endere\'e7o,Email, CNPJ, Telefone Fornecedor.\par
+
+\pard\li720\sa200\sl276\slmult1\tx1420\tab\b 2.0.2.1 Ver Fornecedor\par
+
+\pard\li720\sa200\sl276\slmult1\tab\tab\b0 Neste t\'f3pico iremos mostrar como ver fornecedores ja \tab\tab cadastrados.\par
+
+\pard\li2160\sa200\sl276\slmult1 1\'b0 - Abre o programa .\par
+2\'b0 - Fa\'e7a o loguin digitando o nome de usuario e a senha.\par
+(ex) usuario: Biscoitinho senha:123.\par
+
+\pard\li720\sa200\sl276\slmult1\tab\tab 3\'b0 - Escolha a op\'e7\'e3o Modulo de Cadastro e gest\'e3o de \tab\tab dados  apertando o numero ''1''.\par
+\tab\tab 4\'b0 - Escolha a op\'e7\'e3o Fornecedor apertando o numero \tab\tab ''3''.\par
+\tab\tab 5\'b0 - Escolha o op\'e7\'e3o Ver Fornecedor, apertando o \tab\tab\tab numero ''2''.\par
+\tab\tab 6\'b0 - Escolha a op\'e7\'e3o deseja.\par
+
+\pard\li720\sa200\sl276\slmult1\tx1420\tab\b 2.0.2.2 Editar Fornecedor\par
+
+\pard\li720\sa200\sl276\slmult1\tab\tab\b0 Neste t\'f3pico iremos mostrar como editar/alterar \tab\tab\tab fornecedores ja cadastrados.\par
+
+\pard\li2160\sa200\sl276\slmult1 1\'b0 - Abre o programa .\par
+2\'b0 - Fa\'e7a o loguin digitando o nome de usuario e a senha.\par
+(ex) usuario: Biscoitinho senha:123.\par
+
+\pard\li720\sa200\sl276\slmult1\tab\tab 3\'b0 - Escolha a op\'e7\'e3o Modulo de Cadastro e gest\'e3o de \tab\tab dados  apertando o numero ''1''.\par
+\tab\tab 4\'b0 - Escolha a op\'e7\'e3o Fornecedor apertando o numero \tab\tab ''3''.\par
+\tab\tab 5\'b0 - Escolha o op\'e7\'e3o Editar Fornecedor, apertando o \tab\tab\tab numero ''3''.\par
+\tab\tab 6\'b0 - Digite o nome Fantasia do fornecedor e logo em \tab\tab\tab seguida digite os novos dados do fornecedor desejado.\par
+\tab\b 2.0.2.3 Excluir Fornecedor\par
+
+\pard\li2160\sa200\sl276\slmult1\b0 1\'b0 - Abre o programa .\par
+2\'b0 - Fa\'e7a o loguin digitando o nome de usuario e a senha.\par
+(ex) usuario: Biscoitinho senha:123.\par
+
+\pard\li720\sa200\sl276\slmult1\tab\tab 3\'b0 - Escolha a op\'e7\'e3o Modulo de Cadastro e gest\'e3o de \tab\tab dados  apertando o numero ''1''.\par
+\tab\tab 4\'b0 - Escolha a op\'e7\'e3o Fornecedor apertando o numero \tab\tab ''3''.\par
+\tab\tab 5\'b0 - Escolha o op\'e7\'e3o Excluir Fornecedor, apertando o \tab\tab numero ''4''.\par
+\tab\tab 6\'b0 - Digite o nome do fornecedor que deseja excluir.\par
+
+\pard\fi10\li710\sa200\sl276\slmult1\b 2.0.3 Produtos\par
+\tab\b0 Neste t\'f3pico iremos demonstrar como \tab\tab\tab\tab\tab\tab cadastra, alterar, ver, excluir produtos do hotel.\par
+
+\pard\li1420\sa200\sl276\slmult1\tab\b 2.0.3.0 Cadastrar Produto\par
+
+\pard\li2160\sa200\sl276\slmult1\b0 Neste t\'f3pico iremos mostrar como cadastrar um fornecedor.\par
+1\'b0 - Abre o programa .\par
+2\'b0 - Fa\'e7a o loguin digitando o nome de usuario e a senha.\par
+(ex) usuario: Biscoitinho senha:123.\par
+
+\pard\li720\sa200\sl276\slmult1\tab\tab 3\'b0 - Escolha a op\'e7\'e3o Modulo de Cadastro e gest\'e3o de \tab\tab dados  apertando o numero ''1''.\par
+\tab\tab 4\'b0 - Escolha a op\'e7\'e3o Produtos apertando o numero \tab\tab\tab ''4''.\par
+\tab\tab 5\'b0 - Escolha o op\'e7\'e3o Cadastrar Produto, apertando o \tab\tab\tab numero ''1''.\par
+
+\pard\li720\sa200\sl276\slmult1\tx1420\tab\tab\tab 6\'b0 - preecha os campos, Codigo do Produto, Nome do \tab\tab\tab produto, Descri\'e7\'e3o do Produto, Quantidade no estoque, \tab\tab\tab Estoque minimo, Pre\'e7o de custo, Pre\'e7o de Venda.\par
+\tab\b 2.0.3.1 Ver Produto \par
+
+\pard\li720\sa200\sl276\slmult1\tab\tab\b0 Neste t\'f3pico iremos mostrar como ver fornecedores ja \tab\tab cadastrados.\par
+
+\pard\li2160\sa200\sl276\slmult1 1\'b0 - Abre o programa .\par
+2\'b0 - Fa\'e7a o loguin digitando o nome de usuario e a senha.\par
+(ex) usuario: Biscoitinho senha:123.\par
+
+\pard\li720\sa200\sl276\slmult1\tab\tab 3\'b0 - Escolha a op\'e7\'e3o Modulo de Cadastro e gest\'e3o de \tab\tab dados  apertando o numero ''1''.\par
+\tab\tab 4\'b0 - Escolha a op\'e7\'e3o Produto apertando o numero \tab\tab\tab ''4''.\par
+\tab\tab 5\'b0 - Escolha o op\'e7\'e3o Ver produto, apertando o \tab\tab\tab numero ''2''.\par
+\tab\tab 6\'b0 - Escolha a op\'e7\'e3o deseja.\par
+
+\pard\li720\sa200\sl276\slmult1\tx1420\tab\b 2.0.3.2 Editar Produto\par
+
+\pard\li720\sa200\sl276\slmult1\tab\tab\b0 Neste t\'f3pico iremos mostrar como editar/alterar \tab\tab\tab fornecedores ja cadastrados.\par
+
+\pard\li2160\sa200\sl276\slmult1 1\'b0 - Abre o programa .\par
+2\'b0 - Fa\'e7a o loguin digitando o nome de usuario e a senha.\par
+(ex) usuario: Biscoitinho senha:123.\par
+
+\pard\li720\sa200\sl276\slmult1\tab\tab 3\'b0 - Escolha a op\'e7\'e3o Modulo de Cadastro e gest\'e3o de \tab\tab dados  apertando o numero ''1''.\par
+\tab\tab 4\'b0 - Escolha a op\'e7\'e3o Produto apertando o numero \tab\tab\tab ''4''.\par
+\tab\tab 5\'b0 - Escolha o op\'e7\'e3o Editar Produto, apertando o \tab\tab\tab numero ''3''.\par
+\tab\tab 6\'b0 - Digite o Codigo do Produto e logo em \tab\tab\tab\tab seguida digite os novos dados do produto desejado.\par
+\tab\b 2.0.3.3 Excluir Produto\par
+\tab\tab\b0 Neste t\'f3pico iremos excluir um produto.\b\par
+
+\pard\li2160\sa200\sl276\slmult1\b0 1\'b0 - Abre o programa .\par
+2\'b0 - Fa\'e7a o loguin digitando o nome de usuario e a senha.\par
+(ex) usuario: Biscoitinho senha:123.\par
+
+\pard\li720\sa200\sl276\slmult1\tab\tab 3\'b0 - Escolha a op\'e7\'e3o Modulo de Cadastro e gest\'e3o de \tab\tab dados  apertando o numero ''1''.\par
+\tab\tab 4\'b0 - Escolha a op\'e7\'e3o Produto apertando o numero \tab\tab\tab ''4''.\par
+\tab\tab 5\'b0 - Escolha o op\'e7\'e3o Excluir Produto, apertando o \tab\tab\tab numero ''4''.\par
+\tab\tab 6\'b0 - Digite o codigo do produto que deseja excluir.\par
+\par
+
+\pard\fi10\li710\sa200\sl276\slmult1\tx710\tx1278\tx1420\tx1704\b 2.0.4 Categorias de Acomoda\'e7\'e3o\par
+\tab\tab\b0 Neste t\'f3pico iremos mostrar como cadastrar, alterar, ver, excluir \tab   categorias de acomoda\'e7\'e3o.\par
+
+\pard\li1420\sa200\sl276\slmult1\b 2.0.4.0 Cadastrar Categorias de Acomoda\'e7\'e3o\par
+
+\pard\li2160\sa200\sl276\slmult1\b0 Neste t\'f3pico iremos mostrar como cadastrar um fornecedor.\par
+1\'b0 - Abre o programa .\par
+2\'b0 - Fa\'e7a o loguin digitando o nome de usuario e a senha.\par
+(ex) usuario: Biscoitinho senha:123.\par
+
+\pard\li720\sa200\sl276\slmult1\tab\tab 3\'b0 - Escolha a op\'e7\'e3o Modulo de Cadastro e gest\'e3o de \tab\tab dados  apertando o numero ''1''.\par
+\tab\tab 4\'b0 - Escolha a op\'e7\'e3o Categoria de acomoda\'e7\'e3o \tab\tab\tab apertando o numero ''5''.\par
+\tab\tab 5\'b0 - Escolha o op\'e7\'e3o Cadastrar Categoria de \tab\tab\tab\tab acomoda\'e7\'e3o, apertando o \tab numero ''1''.\par
+
+\pard\li720\sa200\sl276\slmult1\tx1420\tab\tab\tab 6\'b0 - preecha os campos, Codigo da categoria, Tipo de \tab\tab\tab categoria (ex:luxo,normal), Descri\'e7\'e3o da categoria,Valor \tab\tab\tab da diaria, Quantidade Comportada. \par
+\tab\b 2.0.4.1 Ver Categorias de Acomoda\'e7\'e3o \par
+
+\pard\li720\sa200\sl276\slmult1\tab\tab\b0 Neste t\'f3pico iremos mostrar como ver Categorias de \tab\tab\tab acomoda\'e7\'e3o ja cadastrados.\par
+
+\pard\li2160\sa200\sl276\slmult1 1\'b0 - Abre o programa .\par
+2\'b0 - Fa\'e7a o loguin digitando o nome de usuario e a senha.\par
+(ex) usuario: Biscoitinho senha:123.\par
+
+\pard\li720\sa200\sl276\slmult1\tab\tab 3\'b0 - Escolha a op\'e7\'e3o Modulo de Cadastro e gest\'e3o de \tab\tab dados  apertando o numero ''1''.\par
+\tab\tab 4\'b0 - Escolha a op\'e7\'e3o Categoria de acomoda\'e7\'e3o \tab\tab\tab apertando o numero ''5''.\par
+\tab\tab 5\'b0 - Escolha o op\'e7\'e3o Ver Categoria de acomoda\'e7\'e3o, \tab\tab\tab apertando o \tab numero ''2''.\par
+\tab\tab 6\'b0 - Escolha a op\'e7\'e3o deseja.\par
+
+\pard\li720\sa200\sl276\slmult1\tx1420\tab\b 2.0.4.2 Editar Categorias de Acomoda\'e7\'e3o\par
+
+\pard\li720\sa200\sl276\slmult1\tab\tab\b0 Neste t\'f3pico iremos mostrar como editar/alterar \tab\tab\tab Categoria de acomoda\'e7\'e3o ja cadastrados.\par
+
+\pard\li2160\sa200\sl276\slmult1 1\'b0 - Abre o programa .\par
+2\'b0 - Fa\'e7a o loguin digitando o nome de usuario e a senha.\par
+(ex) usuario: Biscoitinho senha:123.\par
+
+\pard\li720\sa200\sl276\slmult1\tab\tab 3\'b0 - Escolha a op\'e7\'e3o Modulo de Cadastro e gest\'e3o de \tab\tab dados  apertando o numero ''1''.\par
+\tab\tab 4\'b0 - Escolha a op\'e7\'e3o Categoria de acomoda\'e7\'e3o \tab\tab\tab apertando o numero ''5''.\par
+\tab\tab 5\'b0 - Escolha o op\'e7\'e3o Editar Categoria de acomoda\'e7\'e3o, \tab\tab apertando o \tab numero ''3''.\par
+\tab\tab 6\'b0 - Digite o Codigo da categoria e logo em \tab\tab\tab\tab seguida digite os novos dados da categoria desejado.\par
+\tab\b 2.0.4.3 Excluir Categorias de Acomoda\'e7\'e3o\par
+\tab\tab\b0 Neste t\'f3pico iremos excluir uma Categoria de \tab\tab\tab\tab Acomoda\'e7\'e3o.\b\par
+
+\pard\li2160\sa200\sl276\slmult1\b0 1\'b0 - Abre o programa .\par
+2\'b0 - Fa\'e7a o loguin digitando o nome de usuario e a senha.\par
+(ex) usuario: Biscoitinho senha:123.\par
+
+\pard\li720\sa200\sl276\slmult1\tab\tab 3\'b0 - Escolha a op\'e7\'e3o Modulo de Cadastro e gest\'e3o de \tab\tab dados  apertando o numero ''1''.\par
+\tab\tab 4\'b0 - Escolha a op\'e7\'e3o Categoria de acomoda\'e7\'e3o \tab\tab\tab apertando o numero ''5''.\par
+\tab\tab 5\'b0 - Escolha o op\'e7\'e3o Excluir Categoria de acomoda\'e7\'e3o, \tab\tab apertando o \tab numero ''4''.\par
+\tab\tab 6\'b0 - Digite o codigo da categoria que deseja excluir.\par
+\b 2.0.5 Acomoda\'e7\'e3o\par
+\tab\b0 Nesse t\'f3pico iremos cadastrar, alterar, ver, excluir tipos de \tab acomoda\'e7\'f5es. \par
+
+\pard\li1420\sa200\sl276\slmult1\tab\b 2.0.5.0 Cadastrar Acomoda\'e7\'e3o\par
+
+\pard\li2160\sa200\sl276\slmult1\b0 Neste t\'f3pico iremos mostrar como cadastrar uma Acomoda\'e7\'e3o.\par
+1\'b0 - Abre o programa .\par
+2\'b0 - Fa\'e7a o loguin digitando o nome de usuario e a senha.\par
+(ex) usuario: Biscoitinho senha:123.\par
+
+\pard\li720\sa200\sl276\slmult1\tab\tab 3\'b0 - Escolha a op\'e7\'e3o Modulo de Cadastro e gest\'e3o de \tab\tab dados  apertando o numero ''1''.\par
+\tab\tab 4\'b0 - Escolha a op\'e7\'e3o  acomoda\'e7\'e3o apertando o numero \tab\tab ''6''.\par
+\tab\tab 5\'b0 - Escolha o op\'e7\'e3o Cadastrar acomoda\'e7\'e3o, apertando \tab\tab o numero ''1''.\par
+
+\pard\li720\sa200\sl276\slmult1\tx1420\tab\tab\tab 6\'b0 - preecha os campos, codigo da acomoda\'e7\'e3o, \tab\tab\tab\tab descri\'e7\'e3o da categoria, facilidades da acomoda\'e7\'e3o, \tab\tab\tab\tab categoria de acomoda\'e7\'e3o que deseja cadastrar \tab\tab\tab\tab ex(luxo,normal). \par
+\tab\b 2.0.5.1 Ver Acomoda\'e7\'e3o\par
+
+\pard\li720\sa200\sl276\slmult1\tab\tab\b0 Neste t\'f3pico iremos mostrar como ver acomoda\'e7\'f5es j\'e1 \tab\tab cadastrados.\par
+
+\pard\li2160\sa200\sl276\slmult1 1\'b0 - Abre o programa .\par
+2\'b0 - Fa\'e7a o loguin digitando o nome de usuario e a senha.\par
+(ex) usuario: Biscoitinho senha:123.\par
+
+\pard\li720\sa200\sl276\slmult1\tab\tab 3\'b0 - Escolha a op\'e7\'e3o Modulo de Cadastro e gest\'e3o de \tab\tab dados  apertando o numero ''1''.\par
+\tab\tab 4\'b0 - Escolha a op\'e7\'e3o acomoda\'e7\'e3o \tab\tab\tab\tab\tab apertando o numero ''6''.\par
+\tab\tab 5\'b0 - Escolha o op\'e7\'e3o Ver  acomoda\'e7\'e3o, \tab\tab\tab\tab apertando o \tab numero ''2''.\par
+\tab\tab 6\'b0 - Escolha a op\'e7\'e3o deseja.\par
+
+\pard\li720\sa200\sl276\slmult1\tx1420\tab\b 2.0.5.2 Editar Acomoda\'e7\'e3o\par
+
+\pard\li720\sa200\sl276\slmult1\tab\tab\b0 Neste t\'f3pico iremos mostrar como editar/alterar \tab\tab\tab acomoda\'e7\'e3o ja cadastrados.\par
+
+\pard\li2160\sa200\sl276\slmult1 1\'b0 - Abre o programa .\par
+2\'b0 - Fa\'e7a o loguin digitando o nome de usuario e a senha.\par
+(ex) usuario: Biscoitinho senha:123.\par
+
+\pard\li720\sa200\sl276\slmult1\tab\tab 3\'b0 - Escolha a op\'e7\'e3o Modulo de Cadastro e gest\'e3o de \tab\tab dados  apertando o numero ''1''.\par
+\tab\tab 4\'b0 - Escolha a op\'e7\'e3o acomoda\'e7\'e3o \tab\tab\tab\tab\tab apertando o numero ''6''.\par
+\tab\tab 5\'b0 - Escolha o op\'e7\'e3o Editar acomoda\'e7\'e3o, \tab\tab\tab\tab apertando o \tab numero ''3''.\par
+\tab\tab 6\'b0 - Digite o Codigo da acomoda\'e7\'e3o e logo em \tab\tab\tab seguida digite os novos dados da acomoda\'e7\'e3o \tab\tab\tab desejado.\par
+\tab\b 2.0.5.3 Excluir Acomoda\'e7\'e3o\par
+\tab\tab\b0 Nesse t\'f3pico iremos excluir uma acomoda\'e7\'e3o.\b\par
+
+\pard\li2160\sa200\sl276\slmult1\b0 1\'b0 - Abre o programa .\par
+2\'b0 - Fa\'e7a o loguin digitando o nome de usuario e a senha.\par
+(ex) usuario: Biscoitinho senha:123.\par
+
+\pard\li720\sa200\sl276\slmult1\tab\tab 3\'b0 - Escolha a op\'e7\'e3o Modulo de Cadastro e gest\'e3o de \tab\tab dados  apertando o numero ''1''.\par
+\tab\tab 4\'b0 - Escolha a op\'e7\'e3o acomoda\'e7\'e3o \tab\tab\tab\tab\tab apertando o numero ''6''.\par
+\tab\tab 5\'b0 - Escolha o op\'e7\'e3o Excluir acomoda\'e7\'e3o, \tab\tab\tab\tab apertando o \tab numero ''4''.\par
+\tab\tab 6\'b0 - Digite o codigo da Acomoda\'e7\'e3o que deseja excluir.\par
+\par
+\b 2.0.6 Operador\par
+\tab\b0 Nesse t\'f3pico iremos cadastrar, alterar, ver, excluir operadores.\par
+
+\pard\li1420\sa200\sl276\slmult1\tab\b 2.0.6.0 Cadastrar Operador\par
+
+\pard\li2160\sa200\sl276\slmult1\b0 Neste t\'f3pico iremos mostrar como cadastrar uma Acomoda\'e7\'e3o.\par
+1\'b0 - Abre o programa .\par
+2\'b0 - Fa\'e7a o loguin digitando o nome de usuario e a senha.\par
+(ex) usuario: Biscoitinho senha:123.\par
+
+\pard\li720\sa200\sl276\slmult1\tab\tab 3\'b0 - Escolha a op\'e7\'e3o Modulo de Cadastro e gest\'e3o de \tab\tab dados  apertando o numero ''1''.\par
+\tab\tab 4\'b0 - Escolha a op\'e7\'e3o  operador apertando o numero \tab\tab  \tab ''7''.\par
+\tab\tab 5\'b0 - Escolha o op\'e7\'e3o Cadastrar operador , apertando \tab\tab\tab o numero ''1''.\par
+
+\pard\li720\sa200\sl276\slmult1\tx1420\tab\tab\tab 6\'b0 - preecha os campos, Codigo do operador, Usuario do \tab\tab\tab operador, nome do operador, senha, nivel de permiss\'e3o. \par
+\tab\b 2.0.6.1 Ver Operador\par
+
+\pard\li720\sa200\sl276\slmult1\tab\tab\b0 Neste t\'f3pico iremos mostrar como ver operador j\'e1 \tab\tab cadastrados.\par
+
+\pard\li2160\sa200\sl276\slmult1 1\'b0 - Abre o programa .\par
+2\'b0 - Fa\'e7a o loguin digitando o nome de usuario e a senha.\par
+(ex) usuario: Biscoitinho senha:123.\par
+
+\pard\li720\sa200\sl276\slmult1\tab\tab 3\'b0 - Escolha a op\'e7\'e3o Modulo de Cadastro e gest\'e3o de \tab\tab dados  apertando o numero ''1''.\par
+\tab\tab 4\'b0 - Escolha a op\'e7\'e3o operador apertando o numero ''7''.\par
+\tab\tab 5\'b0 - Escolha o op\'e7\'e3o Ver  operador, apertando o \tab numero ''2''.\par
+\tab\tab 6\'b0 - Escolha a op\'e7\'e3o deseja.\par
+
+\pard\li720\sa200\sl276\slmult1\tx1420\tab\b 2.0.6.2 Editar Operador\par
+
+\pard\li720\sa200\sl276\slmult1\tab\tab\b0 Neste t\'f3pico iremos mostrar como editar/alterar \tab\tab\tab operador ja cadastrados.\par
+
+\pard\li2160\sa200\sl276\slmult1 1\'b0 - Abre o programa .\par
+2\'b0 - Fa\'e7a o loguin digitando o nome de usuario e a senha.\par
+(ex) usuario: Biscoitinho senha:123.\par
+
+\pard\li720\sa200\sl276\slmult1\tab\tab 3\'b0 - Escolha a op\'e7\'e3o Modulo de Cadastro e gest\'e3o de \tab\tab dados  apertando o numero ''1''.\par
+\tab\tab 4\'b0 - Escolha a op\'e7\'e3o operador apertando o numero ''7''.\par
+\tab\tab 5\'b0 - Escolha o op\'e7\'e3o Editar operador ,apertando o \tab\tab\tab numero ''3''.\par
+\tab\tab 6\'b0 - Digite o Codigo da operador e logo em \tab\tab\tab\tab seguida digite os novos dados da operador \tab\tab\tab\tab desejado.\par
+\tab\b 2.0.6.3 Excluir Operador\par
+\tab\tab\b0 Nesse t\'f3pico iremos excluir um operador .\b\par
+
+\pard\li2160\sa200\sl276\slmult1\b0 1\'b0 - Abre o programa .\par
+2\'b0 - Fa\'e7a o loguin digitando o nome de usuario e a senha.\par
+(ex) usuario: Biscoitinho senha:123.\par
+
+\pard\li720\sa200\sl276\slmult1\tab\tab 3\'b0 - Escolha a op\'e7\'e3o Modulo de Cadastro e gest\'e3o de \tab\tab dados  apertando o numero ''1''.\par
+\tab\tab 4\'b0 - Escolha a op\'e7\'e3o operador \tab\tab\tab\tab\tab\tab apertando o numero ''7''.\par
+\tab\tab 5\'b0 - Escolha o op\'e7\'e3o Excluir operador , \tab\tab\tab\tab\tab apertando o \tab numero ''4''.\par
+\tab\tab 6\'b0 - Digite o codigo da operador que deseja excluir.\par
+
+\pard\sa200\sl276\slmult1\b 2.1 Modulo de Reserva\par
+\tab\b0 Neste modulo iremos mostrar como fazer realizar uma reserva ou \tab excluir uma reserva do Hotel.\par
+\tab\b 2.1.0 Realizar Reserva\b0\tab\par
+\tab\tab Para realizar uma reserva dev\'e9 seguir os seguintes passos:\par
+
+\pard\li2160\sa200\sl276\slmult1 1\'b0 - Abre o programa .\par
+2\'b0 - Fa\'e7a o loguin digitando o nome de usuario e a senha.\par
+(ex) usuario: Biscoitinho senha:123.\par
+
+\pard\li720\sa200\sl276\slmult1\tab\tab 3\'b0 - Escolha a op\'e7\'e3o Modulo de Reserva, apertando o \tab\tab numero ''2''.\par
+\tab\tab 4\'b0 - Escolha a op\'e7\'e3o Realizar reserva, apertando o \tab\tab\tab numero ''1''.\par
+\tab\tab 5\'b0 - Escolha a op\'e7\'e3o que deseja realizar sua reserva:\par
+\tab\tab\tab -Op\'e7\'e3o 1: Por categoria de acomoda\'e7\'e3o.\par
+\tab\tab\tab -Op\'e7\'e3o 2: Por Data.\par
+\tab\tab\tab -Op\'e7\'e3o 3: Por quantidade de pessoas.\par
+\tab\tab\tab -Op\'e7\'e3o 4: Por facilidades.\par
+
+\pard\fi10\li710\sa200\sl276\slmult1\b 2.1.1 Listar Reservas\par
+\tab\b0 Nesse t\'f3pico iremos listar as reservas cadastradas.\par
+
+\pard\li2160\sa200\sl276\slmult1 1\'b0 - Abre o programa .\par
+2\'b0 - Fa\'e7a o loguin digitando o nome de usuario e a senha.\par
+(ex) usuario: Biscoitinho senha:123.\par
+
+\pard\li720\sa200\sl276\slmult1\tab\tab 3\'b0 - Escolha a op\'e7\'e3o Modulo de Reserva, apertando o \tab\tab numero ''2''.\par
+\tab\tab 4\'b0 - Escolha a op\'e7\'e3o Listar reserva, apertando o \tab\tab\tab numero ''2''.\par
+\b 2.1.2 Excluir Reserva\par
+\tab\b0 Nesse t\'f3pico iremos mostrar como exclui uma reserva.\par
+
+\pard\li2160\sa200\sl276\slmult1 1\'b0 - Abre o programa .\par
+2\'b0 - Fa\'e7a o loguin digitando o nome de usuario e a senha.\par
+(ex) usuario: Biscoitinho senha:123.\par
+
+\pard\li720\sa200\sl276\slmult1\tab\tab 3\'b0 - Escolha a op\'e7\'e3o Modulo de Reserva, apertando o \tab\tab numero ''2''.\par
+\tab\tab 4\'b0 - Escolha a op\'e7\'e3o Excluir reserva, apertando o \tab\tab\tab numero ''3''.\par
+\tab\tab 5\'b0 - Digite o codigo da reserva\par
+
+\pard\fi720\sa200\sl276\slmult1\b 2.2 Modulo de Transa\'e7\'f5es\b0\par
+
+\pard\li720\sa200\sl276\slmult1\tab Nesse modulo poder\'e1 ver todas as transa\'e7\'f5es feitas como:\par
+\tab - Check-in\par
+\tab - Check-out\par
+\tab -Venda de produto\par
+\tab -Controle de caixa\par
+\tab -Contas a receber\par
+\tab -Entrada de produtos industrializados\par
+\tab -Contas a pagar \par
+\tab Para acessar esse modulo basta seguir os seguintes passos:\par
+
+\pard\li2160\sa200\sl276\slmult1 1\'b0 - Abre o programa .\par
+2\'b0 - Fa\'e7a o loguin digitando o nome de usuario e a senha.\par
+(ex) usuario: Biscoitinho senha:123.\par
+3\'b0 Escolha a op\'e7\'e3o Modulo de Transa\'e7\'f5es apertando o numero ''3''.\par
+4\'b0Escolha a transa\'e7\'e3o que deseja verificar.\par
+\par
+
+\pard\sa200\sl276\slmult1\tx284\b 2.3 Modulo de Feedback \par
+
+\pard\li720\sa200\sl276\slmult1\tx284\b0 Nesse modulo podere rever tudo que cadastrou no sistema.\par
+\b 2.3.0 Listagem Hospede\par
+\b0\tab Ver as listagem de Hospedes\b\par
+
+\pard\li2160\sa200\sl276\slmult1\b0 1\'b0 - Abre o programa .\par
+2\'b0 - Fa\'e7a o loguin digitando o nome de usuario e a senha.\par
+(ex) usuario: Biscoitinho senha:123.\par
+3\'b0 Escolha a op\'e7\'e3o Modulo de Feedback apertando o numero ''4''.\par
+4\'b0 Escolha a op\'e7\'e3o Listagem Hospede, apertando o numero ''1''.\par
+
+\pard\fi10\li710\sa200\sl276\slmult1\b 2.3.1 Listagem Acomoda\'e7\'e3o\par
+
+\pard\li720\sa200\sl276\slmult1\tx284\b0\tab Ver as listagem de Acomoda\'e7\'e3o\b\par
+
+\pard\li2160\sa200\sl276\slmult1\b0 1\'b0 - Abre o programa .\par
+2\'b0 - Fa\'e7a o loguin digitando o nome de usuario e a senha.\par
+(ex) usuario: Biscoitinho senha:123.\par
+3\'b0 Escolha a op\'e7\'e3o Modulo de Feedback apertando o numero ''4''.\par
+4\'b0 Escolha a op\'e7\'e3o Listagem Acomoda\'e7\'e3o, apertando o numero ''2''.\par
+
+\pard\li720\sa200\sl276\slmult1\b 2.3.2 Listagem Reserva\par
+
+\pard\li720\sa200\sl276\slmult1\tx284  \tab\b0 Ver as listagem de Reserva\b\par
+
+\pard\li2160\sa200\sl276\slmult1\b0 1\'b0 - Abre o programa .\par
+2\'b0 - Fa\'e7a o loguin digitando o nome de usuario e a senha.\par
+(ex) usuario: Biscoitinho senha:123.\par
+3\'b0 Escolha a op\'e7\'e3o Modulo de Feedback apertando o numero ''4''.\par
+4\'b0 Escolha a op\'e7\'e3o Listagem Reserva, apertando o numero ''3''.\par
+
+\pard\li720\sa200\sl276\slmult1\b 2.3.3 Movimenta\'e7\'f5es de Acomoda\'e7\'f5es\b0\par
+
+\pard\li720\sa200\sl276\slmult1\tx284\tab Ver as Movimenta\'e7\'f5es de Acomoda\'e7\'f5es\par
+
+\pard\li2160\sa200\sl276\slmult1 1\'b0 - Abre o programa .\par
+2\'b0 - Fa\'e7a o loguin digitando o nome de usuario e a senha.\par
+(ex) usuario: Biscoitinho senha:123.\par
+3\'b0 Escolha a op\'e7\'e3o Modulo de Feedback apertando o numero ''4''.\par
+4\'b0 Escolha a op\'e7\'e3o Movimenta\'e7\'f5es de Acomoda\'e7\'f5es, apertando o numero ''4''.\par
+
+\pard\li720\sa200\sl276\slmult1\b 2.3.4 Listagem de Produtos de Consumo\b0\par
+\tab Ver as Listagem de Produtos de Consumo\par
+
+\pard\li2160\sa200\sl276\slmult1 1\'b0 - Abre o programa .\par
+2\'b0 - Fa\'e7a o loguin digitando o nome de usuario e a senha.\par
+(ex) usuario: Biscoitinho senha:123.\par
+3\'b0 Escolha a op\'e7\'e3o Modulo de Feedback apertando o numero ''4''.\par
+
+\pard\li720\sa200\sl276\slmult1\tab\tab 4\'b0 Escolha a op\'e7\'e3o Listagem de Produtos de Consumo, \tab\tab apertando o numero ''5''.\par
+\b 2.3.5 Vendas \par
+\tab\b0 Ver as Vendas\par
+
+\pard\li2160\sa200\sl276\slmult1 1\'b0 - Abre o programa .\par
+2\'b0 - Fa\'e7a o loguin digitando o nome de usuario e a senha.\par
+(ex) usuario: Biscoitinho senha:123.\par
+3\'b0 Escolha a op\'e7\'e3o Modulo de Feedback apertando o numero ''4''.\par
+
+\pard\li720\sa200\sl276\slmult1\tab\tab 4\'b0 Escolha a op\'e7\'e3o Vendas, apertando o numero ''6''.\par
+\b 2.3.6 Contas a Receber \par
+\tab\b0 Ver Contas a Receber\par
+
+\pard\li2160\sa200\sl276\slmult1 1\'b0 - Abre o programa .\par
+2\'b0 - Fa\'e7a o loguin digitando o nome de usuario e a senha.\par
+(ex) usuario: Biscoitinho senha:123.\par
+3\'b0 Escolha a op\'e7\'e3o Modulo de Feedback apertando o numero ''4''.\par
+
+\pard\li720\sa200\sl276\slmult1\tab\tab 4\'b0 Escolha a op\'e7\'e3o Contas a Receber,\par
+\tab\tab  apertando o numero ''7''.\par
+\b 2.3.7 Contas a Pagar\par
+\tab\b0 Ver Contas a Pagar\par
+
+\pard\li2160\sa200\sl276\slmult1 1\'b0 - Abre o programa .\par
+2\'b0 - Fa\'e7a o loguin digitando o nome de usuario e a senha.\par
+(ex) usuario: Biscoitinho senha:123.\par
+3\'b0 Escolha a op\'e7\'e3o Modulo de Feedback apertando o numero ''4''.\par
+
+\pard\li720\sa200\sl276\slmult1\tab\tab 4\'b0 Escolha a op\'e7\'e3o Contas a Pagar,\par
+\tab\tab  apertando o numero ''8''.\par
+\b 2.3.8 Movimenta\'e7\'e3o do Caixa\par
+\b0\tab Ver Movimenta\'e7\'e3o do Caixa.\par
+
+\pard\li2160\sa200\sl276\slmult1 1\'b0 - Abre o programa .\par
+2\'b0 - Fa\'e7a o loguin digitando o nome de usuario e a senha.\par
+(ex) usuario: Biscoitinho senha:123.\par
+3\'b0 Escolha a op\'e7\'e3o Modulo de Feedback apertando o numero ''4''.\par
+
+\pard\li720\sa200\sl276\slmult1\tab\tab 4\'b0 Escolha a op\'e7\'e3o Movimenta\'e7\'e3o do Caixa.,\par
+\tab\tab  apertando o numero ''9''.\par
+
+\pard\fi578\li142\sa200\sl276\slmult1\par
+
+\pard\sa200\sl276\slmult1\b 2.4 Modulo de Importa\'e7\'e3o e Exporta\'e7\'e3o\par
+\tab\b0 Nesse modulo iremos demonstrar como importar e exportar um \tab aquivo(t\'f3pico ou modulo) do seu sistema do hotel.\par
+\tab\b 2.4.0 Importa\'e7\'e3o \par
+\tab\b0 Para importar um arquivo (t\'f3pico ou modulo) basta seguir os seguintes \tab passos.\par
+
+\pard\li2160\sa200\sl276\slmult1 1\'b0 - Abre o programa .\par
+2\'b0 - Fa\'e7a o loguin digitando o nome de usuario e a senha.\par
+(ex) usuario: Biscoitinho senha:123.\par
+3\'b0 Escolha a op\'e7\'e3o Modulo de Importa\'e7\'e3o e Exporta\'e7\'e3o apertando o numero ''5''.\par
+4\'b0Escolha a op\'e7\'e3o Importar, apertando o numero 1.\par
+5\'b0Escolha a op\'e7\'e3o desejada para Importar.\par
+
+\pard\li720\sa200\sl276\slmult1\b 2.4.1 Exporta\'e7\'e3o\par
+
+\pard\li2160\sa200\sl276\slmult1\b0 1\'b0 - Abre o programa .\par
+2\'b0 - Fa\'e7a o loguin digitando o nome de usuario e a senha.\par
+(ex) usuario: Biscoitinho senha:123.\par
+3\'b0 Escolha a op\'e7\'e3o Modulo de Importa\'e7\'e3o e Exporta\'e7\'e3o apertando o numero ''5''.\par
+4\'b0Escolha a op\'e7\'e3o Exporta\'e7\'e3o, apertando o numero 2.\par
+
+\pard\li720\sa200\sl276\slmult1\tab\tab 5\'b0Escolha a op\'e7\'e3o desejada para Exportar.\par
+
+\pard\sa200\sl276\slmult1\par
+
+\pard\li720\sa200\sl276\slmult1\par
+\par
+
+\pard\fi10\li710\sa200\sl276\slmult1\par
+
+\pard\li720\sa200\sl276\slmult1\tx284\par
+
+\pard\li720\sa200\sl276\slmult1\par
+\par
+
+\pard\fi10\li710\sa200\sl276\slmult1\par
+
+\pard\sa200\sl276\slmult1\par
+
+\pard\li720\sa200\sl276\slmult1\par
+\par
+\par
+
+\pard\li2160\sa200\sl276\slmult1\par
+
+\pard\li720\sa200\sl276\slmult1\par
+
+\pard\sa200\sl276\slmult1\b\tab\tab\tab\b0\par
+\par
+
+\pard\li1440\sa200\sl276\slmult1\b\par
+
+\pard\li720\sa200\sl276\slmult1\par
+
+\pard\sa200\sl276\slmult1\b0\par
+\par
+\f0\fs22\par
+}
+ 
