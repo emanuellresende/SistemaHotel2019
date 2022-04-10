@@ -1,0 +1,15 @@
+<dados>
+	<tabela=hospede>
+		<registro>
+			<codigo>123</codigo>
+			<nome>Emanuel</nome>
+			<email>marechalmelo@gmail.com</email>
+			<sexo>masculino</sexo>
+			<Estado_Civil>solteiro</Estado_Civil>
+			<Data_Nascimento>4/2/2001</Data_Nascimento>
+			<cpf>13699488768.000000</cpf>
+			<telefone>35997143040.000000</telefone>
+			<endereco>abilio machado</endereco>
+		</registro>
+	</tabela=hospede>
+</dados>
